@@ -18,7 +18,7 @@ class CustomDataset(Dataset):
             folder_path = os.path.join(self.root_dir, label)
             for img_path in glob.glob(os.path.join(folder_path, '*.jpg')):
                 self.images.append(img_path)
-                self.labels.append(1 if label=='real' else 0)             
+                self.labels.append(1 if label=='Real' else 0)             
     def __len__(self):
         return len(self.images)    
     def __getitem__(self, index):
@@ -32,13 +32,13 @@ class CustomDataset(Dataset):
 def get_data_loaders(dataset_paths, batch_size=32):
     #returns dictionary containing Dataloaders of train and test
     data_loaders = {}
-    transform = transforms.Compose([transforms.Resize((224, 224)), transforms.ToTensor(), transforms.Normalize(mean=[0.5, 0.5, 0.5], std=[0.5, 0.5, 0.5])])    
+    transform = transforms.Compose([transforms.Resize((224, 224)), transforms.ToTensor()])    
     #loop through each dataset and create data loaders
     for dataset_name, path in dataset_paths.items():
         try:
             train_dataset = CustomDataset(os.path.join(path, 'train'), transform=transform)
             test_dataset = CustomDataset(os.path.join(path, 'test'), transform=transform)
-            train_loader = DataLoader(train_dataset, batch_size=batch_size)
+            train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True)
             test_loader = DataLoader(test_dataset, batch_size=batch_size)
             # Check if loaders are empty
             if len(train_loader) == 0:
