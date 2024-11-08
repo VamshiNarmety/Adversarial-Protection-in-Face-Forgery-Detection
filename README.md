@@ -12,5 +12,5 @@ here are the links:
  i)[Faceforensics++](https://www.kaggle.com/datasets/farhansharukhhasan/faceforensics1600-videospreprocess/data)<br>
  ii)[CelebDF(v2)](https://www.kaggle.com/datasets/shivendrasinha/celeb-dfv2-processed/data)<br>
  iii)[Real-v/s-Fake](https://www.kaggle.com/datasets/xhlulu/140k-real-and-fake-faces)<br>
-The CelebDF(v2) datasets has video frames, to extract only the facial regions we use a pre-trained face landmark detection, the code is available<br>
-in this file(src/preprocess/crop_dlib.py)<br>
+The CelebDF(v2) datasets has video frames, to extract only the facial regions we use a pre-trained face landmark detection, the code is available in this file (src/preprocess/crop_dlib.py)<br>
+
