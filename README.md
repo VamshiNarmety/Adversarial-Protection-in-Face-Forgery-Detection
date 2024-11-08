@@ -8,7 +8,7 @@
 we use three datasets from kaggle:
 1. **Fakeforensics++** and **celebDF(V2)**: These have both real and fake faces made with different deepfake techniques.
 2. **Real-v/s-Fake**: This has real and fake faces made with styleGAN
-here are the links:
+here are the links:<br>
  i)[Faceforensics++](https://www.kaggle.com/datasets/farhansharukhhasan/faceforensics1600-videospreprocess/data)<br>
  ii)[CelebDF(v2)](https://www.kaggle.com/datasets/shivendrasinha/celeb-dfv2-processed/data)<br>
  iii)[Real-v/s-Fake](https://www.kaggle.com/datasets/xhlulu/140k-real-and-fake-faces)<br>
