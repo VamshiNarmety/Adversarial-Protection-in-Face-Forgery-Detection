@@ -14,3 +14,6 @@ here are the links:<br>
  iii)[Real-v/s-Fake](https://www.kaggle.com/datasets/xhlulu/140k-real-and-fake-faces)<br>
 The CelebDF(v2) datasets has video frames, to extract only the facial regions we use a pre-trained face landmark detection, the code is available in this file (src/preprocess/crop_dlib.py)<br>
 
+
+# Note
+this is just the tentative one.The complete project repository will be updated soon.
