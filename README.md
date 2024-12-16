@@ -44,3 +44,7 @@ Run the `src/utils/trigger_generator.py` file to train the trigger generator for
 - Run the `ipynb` files for the detection and purification of the attacks.
 - The code for the functions used in these `ipynb` files is present in `src/defender/bd_detection.py` and `src/defender/backdoor_purification.py`.
 - Make slight changes in the code of the files in `src/defender/` depending on the model architecture and the layers you are considering for the defense mechanism.
+
+# Note
+- Ensure you modify paths appropriately when switching between local environments and cloud-based platforms (Google Colab, Kaggle).
+- Make sure you adjust the code in the defender files (bd_detection.py, backdoor_purification.py) as needed, based on your model's architecture and layers considered for defense.
