@@ -13,7 +13,7 @@ The code was run on Ubuntu with the following setup:
 
    ```bash
    pip3 install -r requirements.txt
-
+and also code was run on kaggle notebooks for accessing GPUs, so make sure to change the paths for using any file in the code depending on whether you are running the code on your local machine or on Kaggle.
 
 # Dataset preparation
 we use three datasets from kaggle:
