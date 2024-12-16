@@ -2,16 +2,19 @@
   This project reproduces the backdoor attacks on models trained to detect face forgeries, examining how these attacks impact the model's ability to distinguish between real and fake faces.
   The project also explores defense mechanism to identify and neutralize these attacks without comprimising the model's performance<br>
 
-  [link to the project report](https://drive.google.com/file/d/1dhWnwKFR6ekPxKd-wbefPx3fS1ISz8pg/view?usp=drive_link)
-# Datasets
+  [link to the project report](https://drive.google.com/file/d/19dICnPXcaYSrgrU3HtvcrESikHkwM5ko/view?usp=drive_link)
+  
+# Dataset preparation
 we use three datasets from kaggle:
 1. **Fakeforensics++** and **celebDF(V2)**: These have both real and fake faces made with different deepfake techniques.
 2. **Real-v/s-Fake**: This has real and fake faces made with styleGAN
 here are the links:<br>
- i)[Faceforensics++](https://www.kaggle.com/datasets/farhansharukhhasan/faceforensics1600-videospreprocess/data)<br>
- ii)[CelebDF(v2)](https://www.kaggle.com/datasets/shivendrasinha/celeb-dfv2-processed/data)<br>
- iii)[Real-v/s-Fake](https://www.kaggle.com/datasets/xhlulu/140k-real-and-fake-faces)<br>
-The CelebDF(v2) datasets has video frames, to extract only the facial regions we use a pre-trained face landmark detection, the code is available in this file (src/preprocess/crop_dlib.py)<br>
+ i)[Faceforensics++](https://drive.google.com/file/d/1KDMFUdNPZ1fVKcZMhh0OJ0939rHnlv00/view?usp=drive_link)<br>
+ ii)[CelebDF(v2)](https://drive.google.com/file/d/1bmBvCR3R4h_aIpisXOQpy-MqJKN_M_Uk/view?usp=drive_link)<br>
+ iii)[Real-v/s-Fake](https://drive.google.com/file/d/1eqNqWSSVk3eHjvZqXYsVk_fDTgwKQfkr/view?usp=drive_link)<br>
+ The datasets links uploaded here are preprocessed.<br>
+In General, To extract facial regions from video frames in the  dataset, a pre-trained face landmark detection model is utilized. The implementation of this process is available in the file \texttt{src/preprocess/crop\_dlib.py}.
+<br>
 
 
 # Note
