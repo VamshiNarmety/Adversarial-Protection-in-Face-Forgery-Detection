@@ -1,9 +1,8 @@
 # Adversarial Protection in Face Forgery Detection
   This project reproduces the backdoor attacks on models trained to detect face forgeries, examining how these attacks impact the model's ability to distinguish between real and fake faces.
   The project also explores defense mechanism to identify and neutralize these attacks without comprimising the model's performance<br>
-  here are the links to selected papers:<br>
-   i) [Poisoned Forgery Face: Towards Backdoor Attacks on Face Forgery Detection](https://arxiv.org/abs/2402.11473v1)<br>
-   ii)[BadActs: A Universal Backdoor Defense in the Activation Space](https://arxiv.org/abs/2405.11227v1)
+
+  [link to the project report](https://drive.google.com/file/d/1dhWnwKFR6ekPxKd-wbefPx3fS1ISz8pg/view?usp=drive_link)
 # Datasets
 we use three datasets from kaggle:
 1. **Fakeforensics++** and **celebDF(V2)**: These have both real and fake faces made with different deepfake techniques.
