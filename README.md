@@ -12,8 +12,8 @@ here are the links:<br>
  i)[Faceforensics++](https://drive.google.com/file/d/1KDMFUdNPZ1fVKcZMhh0OJ0939rHnlv00/view?usp=drive_link)<br>
  ii)[CelebDF(v2)](https://drive.google.com/file/d/1bmBvCR3R4h_aIpisXOQpy-MqJKN_M_Uk/view?usp=drive_link)<br>
  iii)[Real-v/s-Fake](https://drive.google.com/file/d/1eqNqWSSVk3eHjvZqXYsVk_fDTgwKQfkr/view?usp=drive_link)<br>
- The datasets links uploaded here are preprocessed.<br>
-In general, to extract facial regions from video frames in the dataset, a pre-trained face landmark detection model is utilized. The implementation of this process is available in the file \texttt{src/preprocess/crop\_dlib.py}.<br>
+ The datasets links uploaded here are preprocessed.In general, to extract facial regions from video frames in the dataset, a pre-trained face landmark detection model is utilized. The implementation of this process is available in the file \texttt{src/preprocess/crop\_dlib.py}.
+
 Download the pre-trained face landmark detection model [here](https://github.com/VamshiNarmety/Adversarial-Protection-in-Face-Forgery-Detection/blob/main/src/preprocess/shape_predictor_81_face_landmarks.dat)<br>
 
 
