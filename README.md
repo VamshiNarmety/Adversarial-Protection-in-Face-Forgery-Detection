@@ -13,7 +13,7 @@ The code was run on Ubuntu with the following setup:
 
    ```bash
    pip3 install -r requirements.txt
-and also code was run on kaggle notebooks for accessing GPUs, so make sure to change the paths for using any file in the code depending on whether you are running the code on your local machine or on Kaggle.
+and also code was run on kaggle notebooks for accessing GPUs, so make sure to change the paths for using any file in the code depending on whether you are running the code on your local machine or any cloud services like google colab/kaggle.
 
 # Dataset preparation
 we use three datasets from kaggle:
@@ -28,6 +28,10 @@ here are the links:<br>
 
 Download the pre-trained face landmark detection model [here](https://github.com/VamshiNarmety/Adversarial-Protection-in-Face-Forgery-Detection/blob/main/src/preprocess/shape_predictor_81_face_landmarks.dat)<br>
 
-
+# Test model on clean Datasets
+After setting up the dataset, you can train and test the model on clean,unmodified datasets to ensure it works well on clean data.<br>
+**Train the model:** To train the model on clean datasets, run the `train_test_model(cleandata).py` file.
+- The purpose of testing on clean data is explicitly mentioned to ensure the model works well before proceeding to the attacks.
+- 
 # Note
 this is just the tentative one.The complete project repository will be updated soon.
