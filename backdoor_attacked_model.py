@@ -134,7 +134,7 @@ if __name__=='__main__':
     }
     data_loaders = get_data_loaders(dataset_paths, batch_size=32)
     trigger_generator = TriggerGenerator()
-    trigger_generator.load_state_dict(torch.load('venv/src/utils/generator.pth', weights_only=True))
+    trigger_generator.load_state_dict(torch.load('src/utils/generator.pth', weights_only=True))
     trigger_generator = trigger_generator.to(device)
     trigger_generator.eval()
     results = {}
@@ -154,7 +154,7 @@ if __name__=='__main__':
         optimizer = optim.Adam(model.parameters(), lr=0.001)
         train_model(model, train_loader, criterion, optimizer, num_epochs=10)
         clean_accuracy = evaluate_model(model, clean_test_loader, poisoned_test_loader)
-        save_path = f'venv/src/trained_models_on_backdoorattacked_data/{dataset_name}_BDmodel.pth'
+        save_path = f'src/models/{dataset_name}_BDmodel.pth'
         torch.save(model.state_dict(), save_path)
         results[dataset_name] = {'clean_accuracy':clean_accuracy}
     print("Results:\n", results)
