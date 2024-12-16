@@ -3,7 +3,18 @@
   The project also explores defense mechanism to identify and neutralize these attacks without comprimising the model's performance<br>
 
   [link to the project report](https://drive.google.com/file/d/19dICnPXcaYSrgrU3HtvcrESikHkwM5ko/view?usp=drive_link)
-  
+
+# setup the project
+The code was run on Ubuntu with the following setup:
+
+1. Install Python 3.10.x
+
+2. From the terminal, run the following:
+
+   ```bash
+   pip3 install -r requirements.txt
+
+
 # Dataset preparation
 we use three datasets from kaggle:
 1. **Fakeforensics++** and **celebDF(V2)**: These have both real and fake faces made with different deepfake techniques.
