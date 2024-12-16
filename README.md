@@ -48,3 +48,4 @@ Run the `src/utils/trigger_generator.py` file to train the trigger generator for
 # Note
 - Ensure you modify paths appropriately when switching between local environments and cloud-based platforms (Google Colab, Kaggle).
 - Make sure you adjust the code in the defender files (bd_detection.py, backdoor_purification.py) as needed, based on your model's architecture and layers considered for defense.
+- If the dataset is too large, load a portion using code present in `src/utils/Dataset_loader.py`. This code is implemented based on the dataset's file structure used in this project and Generally, should be updated if the structure changes i.e, if other datasets were used.
