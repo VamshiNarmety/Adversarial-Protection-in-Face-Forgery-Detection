@@ -2,7 +2,7 @@
   This project reproduces the backdoor attacks on models trained to detect face forgeries, examining how these attacks impact the model's ability to distinguish between real and fake faces.
   The project also explores defense mechanism to identify and neutralize these attacks without comprimising the model's performance<br>
 
-  [link to the project report](https://drive.google.com/file/d/19dICnPXcaYSrgrU3HtvcrESikHkwM5ko/view?usp=drive_link)
+  [link to the findings and comprehensive report](https://drive.google.com/file/d/19dICnPXcaYSrgrU3HtvcrESikHkwM5ko/view?usp=drive_link)
 
 # setup the project
 The code was run on Ubuntu with the following setup:
