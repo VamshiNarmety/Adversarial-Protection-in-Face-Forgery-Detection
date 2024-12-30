@@ -34,7 +34,7 @@ After setting up the dataset, you can train and test the model on clean,unmodifi
 - The purpose of testing on clean data is explicitly mentioned to ensure the model works well before proceeding to the attacks.
 
 # Trigger generator(Backdoor attack)
-Run the `src/utils/trigger_generator.py` file to train the trigger generator for backdoor attacks and save the model.
+Run the `src/utils/trigger_generator.py` file to train the trigger generator for backdoor attacks and save the model. Execute this file for different values of `v`, where the kernel size is given by `2v+1`, and save the corresponding models. Additionally, I have uploaded the zip file containing the models that I have trained in the `src/utils/trigger_generators` directory.
 
 # Train model on Backdoor attacked data
 - Run the `backdoor_attacked_model.py` file to poison the datasets and prepare them for training the model. This script modifies the datasets by injecting backdoor triggers.
