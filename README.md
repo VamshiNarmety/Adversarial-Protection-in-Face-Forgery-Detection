@@ -34,7 +34,8 @@ After setting up the dataset, you can train and test the model on clean,unmodifi
 - The purpose of testing on clean data is explicitly mentioned to ensure the model works well before proceeding to the attacks.
 
 # Trigger generator(Backdoor attack)
-Run the `src/utils/trigger_generator.py` file to train the trigger generator for backdoor attacks and save the model. Execute this file for different values of `v`, where the kernel size is given by `2v+1`, and save the corresponding models. Additionally, I have uploaded the zip file containing the models that I have trained in the `src/utils/trigger_generators` directory.
+- Run the `src/utils/trigger_generator.py` file to train the trigger generator for backdoor attacks and save the model. Execute this file for different values of `v`, where the kernel size is given by `2v+1`, and save the corresponding models. Additionally, I have uploaded the zip file containing the models that I have trained in the `src/utils/trigger_generators` directory.
+- Please run the `kernel_stealthiness.py` script for the ablation study of kernel size vs stealthiness of the attacks, using the PSNR, SSIM, and $L_{\infty}$ metrics. The script will automatically plot the trade-off for each sample from every dataset, including my personal image, and select the optimal kernel size that produces the stealthiest attacks. The four sample images required for this experiment are located in the `sample_images` folder. Additionally, ensure that the paths to the model weights files are updated according to the directory structure of your working environment. The results obtained from this experiment are described in the report.
 
 # Train model on Backdoor attacked data
 - Run the `backdoor_attacked_model.py` file to poison the datasets and prepare them for training the model. This script modifies the datasets by injecting backdoor triggers.
