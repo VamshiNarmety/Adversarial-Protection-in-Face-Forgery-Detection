@@ -47,6 +47,11 @@ After setting up the dataset, you can train and test the model on clean,unmodifi
 - The code for the functions used in these `ipynb` files is present in `src/defender/bd_detection.py` and `src/defender/backdoor_purification.py`.
 - Make slight changes in the code of the files in `src/defender/` depending on the model architecture and the layers you are considering for the defense mechanism.
 
+# References
+selected research papers for the project
+1. [Poisoned Forgery Face: Towards Backdoor Attacks on Face Forgery Detection](https://arxiv.org/pdf/2402.11473v1)
+2. [BadActs: A Universal Backdoor Defense in the Activation Space](https://arxiv.org/pdf/2405.11227)
+
 # Note
 - Ensure you modify paths appropriately when switching between local environments and cloud-based platforms (Google Colab, Kaggle).
 - Make sure you adjust the code in the defender files (bd_detection.py, backdoor_purification.py) as needed, based on your model's architecture and layers considered for defense.
