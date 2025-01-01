@@ -1,6 +1,6 @@
 # Adversarial Protection in Face Forgery Detection
   This project reproduces the backdoor attacks on models trained to detect face forgeries, examining how these attacks impact the model's ability to distinguish between real and fake faces.
-  The project also explores defense mechanism to identify and neutralize these attacks without comprimising the model's performance<br>
+  The project also explores defense mechanism to identify and neutralize these attacks, albeit with a slight compromise in the model's accuracy.<br>
 
   [link to the findings and comprehensive report](https://drive.google.com/file/d/11X9eeLgnBe46oSvUtAN0WAoeUvpp-Ol3/view?usp=drive_link)
 
