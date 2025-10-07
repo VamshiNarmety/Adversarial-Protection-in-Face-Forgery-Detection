@@ -15,51 +15,6 @@ The code was run on Ubuntu with the following setup:
    pip3 install -r requirements.txt
 and also code was run on kaggle notebooks for accessing GPUs, so make sure to change the paths for using any file in the code depending on whether you are running the code on your local machine or any cloud services like google colab/kaggle.
 
-# Directory
-├── .gitignore
-├── LICENSE
-├── README.md
-├── backdoor_attacked_model.py
-├── combined_dataset.ipynb
-├── dataset-1.ipynb
-├── dataset-2.ipynb
-├── dataset-3.ipynb
-├── kernel_stealthiness.py
-├── requirements.txt
-├── results on clean data.png
-├── sample.png
-├── sample_images
-    ├── my_image.jpg
-    ├── samplefromFF++.jpg
-    ├── samplefromceleb.jpg
-    └── samplefromrealvsfake.jpg
-├── src
-    ├── attacks
-    │   └── bd_attacks.py
-    ├── defender
-    │   ├── backdoor_purification.py
-    │   └── bd_detection.py
-    ├── models
-    │   ├── combined_model.pth
-    │   ├── dataset1_BDmodel.pth
-    │   ├── dataset2_BDmodel.pth
-    │   └── dataset3_BDmodel.pth
-    ├── preprocess
-    │   ├── crop_dlib.py
-    │   └── shape_predictor_81_face_landmarks.dat
-    └── utils
-    │   ├── Dataset_loader.py
-    │   ├── Model.py
-    │   ├── trigger_generator.py
-    │   └── trigger_generators
-    │       ├── generator_11.pth
-    │       ├── generator_13.pth
-    │       ├── generator_3.pth
-    │       ├── generator_5.pth
-    │       ├── generator_7.pth
-    │       └── generator_9.pth
-└── train_test_model(cleandata).py
-
 # Dataset preparation
 we use three datasets from kaggle:
 1. **Fakeforensics++** and **celebDF(V2)**: These have both real and fake faces made with different deepfake techniques.
